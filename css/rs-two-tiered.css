@@ -1,0 +1,124 @@
+.two-tiered {
+	position: relative;
+	margin-top: -141px;
+	margin-bottom: 15px;
+	z-index: 1;
+}
+
+.two-tiered .two-tiered__inner {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-end;
+	height: 100vh;
+	padding: 57px 42px;
+	background-size: cover;
+	background-position: center;
+}
+
+.two-tiered .two-tiered__info {
+	padding-left: 25px;
+	border-left: 4px solid #ffffff;
+}
+
+.two-tiered .two-tiered__title {
+	font-family: Montserrat-Medium;
+	font-size: 38px;
+	color: #ffffff;
+	margin: 0 0 30px;
+}
+
+.two-tiered .two-tiered__desc {
+	font-family: Montserrat-Medium;
+	font-size: 18px;
+	line-height: 27px;
+	color: #ffffff;
+	margin: 0;
+}
+
+.two-tiered .two-tiered__year {
+	position: absolute;
+	right: 45px;
+	bottom: 60px;
+	font-family: Montserrat-Medium;
+	font-size: 60px;
+	color: #ffffff;
+}
+
+.two-tiered .two-tiered__year::after {
+	content: "";
+	position: absolute;
+	left: -50px;
+	bottom: -20px;
+	width: 4px;
+	height: 184px;
+	transform: rotate(45deg);
+	background-color: #ffffff;
+}
+
+@media screen and (max-width: 1100px) {
+	.two-tiered .two-tiered__title {
+		font-size: 35px;
+	}
+	.two-tiered .two-tiered__desc {
+		font-size: 16px;
+	}
+	.two-tiered .two-tiered__info {
+		padding-bottom: 100px;
+	}
+	.two-tiered .two-tiered__year {
+		font-size: 35px;
+	}
+	.two-tiered .two-tiered__year::after {
+		height: 85px;
+		left: -35px;
+		bottom: -10px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.two-tiered {
+		margin-top: -100px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.two-tiered {
+		margin-top: -75px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.two-tiered .two-tiered__inner {
+		padding: 30px;
+	}
+	.two-tiered .two-tiered__year {
+		right: 30px;
+		bottom: 30px;
+	}
+	.two-tiered .two-tiered__info {
+		padding-left: 0;
+		border-left: 0;
+		padding-bottom: 75px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.two-tiered .two-tiered__title {
+		font-size: 25px;
+		margin-bottom: 20px;
+	}
+	.two-tiered .two-tiered__desc {
+		font-size: 14px;
+		line-height: 21px;
+	}
+	.two-tiered .two-tiered__year {
+		font-size: 22px;
+	}
+	.two-tiered .two-tiered__year::after {
+		height: 55px;
+		left: -25px;
+		bottom: -5px;
+	}
+}
