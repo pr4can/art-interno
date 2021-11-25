@@ -36,6 +36,17 @@ body.main-page {
 	overflow: hidden;
 }
 
+
+@media (min-width: 992px) {
+	.col-md-2 {
+		width: calc(16.66666667% - 15px);
+	}
+
+	.col-md-8 {
+		width: calc(66.66666667% + 30px);
+	}
+}
+
 @keyframes scaleBall {
   50% {
     transform: translate(-50%, -50%) scale(0.04);

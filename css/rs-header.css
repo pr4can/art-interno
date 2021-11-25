@@ -84,11 +84,13 @@
 	transition: transform 0.3s cubic-bezier(0.45, 0.46, 0.05, 0.96);
 }
 
-.header.-fill .menu__item::after {
+.header.-fill .menu__item::after,
+.header.-fill .menu__item.-active::after {
 	background-color: #000000;
 }
 
-.header .menu__item:hover::after {
+.header .menu__item:hover::after,
+.header .menu__item.-active::after {
 	transform: scaleX(1);
 	transform-origin: 0 0;
 	transition: transform 0.5s cubic-bezier(0.45, 0.46, 0.05, 0.96);
@@ -99,6 +101,7 @@
 	font-size: 14px;
 	line-height: 20px;
 	color: #ffffff;
+	letter-spacing: 0.5px;
 }
 
 .header.-fill .menu__item > a {
@@ -267,6 +270,7 @@
 	font-size: 14px;
 	line-height: 20px;
 	color: #000000;
+	letter-spacing: 0.5px;
 }
 
 .header-fixed .header-fixed__right,

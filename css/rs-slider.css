@@ -17,7 +17,7 @@
 
 .slider .slider-arrows__item {
 	position: relative;	
-	margin: 0 120px;
+	margin: 0 140px;
 }
 
 .slider .slider-arrows__item::before {
@@ -66,7 +66,7 @@
 }
 
 .slider .slider__list {
-	width: calc(66.66666667% + 2px);
+	width: calc(66.66666667% + 32px);
 	border-right: 1px solid rgba(255, 255, 255, 0.2);
 	border-left: 1px solid rgba(255, 255, 255, 0.2);
 	margin: 0 auto;
@@ -111,7 +111,7 @@
   }
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1200px) {
 	.slider .slider-arrows__item {
 		margin: 0 60px;
 	}
